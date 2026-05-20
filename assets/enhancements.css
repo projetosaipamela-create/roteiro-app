@@ -1,0 +1,54 @@
+.chip-button {
+  cursor: pointer;
+  font: inherit;
+}
+.chip-button:hover {
+  transform: translateY(-1px);
+  background: rgba(255,255,255,.3);
+}
+.mission-strip {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+  margin-top: 12px;
+}
+.mission-card {
+  min-height: 76px;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  padding: 12px;
+  background: radial-gradient(circle at 90% 12%, rgba(255,230,111,.35), transparent 34%), #fffdf8;
+  box-shadow: 0 10px 28px rgba(29, 41, 38, .06);
+}
+.mission-card span {
+  display: block;
+  margin-bottom: 5px;
+  color: var(--muted);
+  font-size: 11px;
+  font-weight: 950;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+}
+.mission-card strong {
+  color: var(--ink);
+  font-size: clamp(18px, 5vw, 26px);
+  line-height: 1;
+}
+.action.favorite {
+  border-color: rgba(217, 72, 79, .28);
+  color: #9d3941;
+  background: #fff5f3;
+}
+.action.favorite.active {
+  border-color: #d9484f;
+  color: #fff;
+  background: #d9484f;
+}
+.quick-filters [data-favorites-filter] {
+  border-color: rgba(217, 72, 79, .28);
+  color: #9d3941;
+  background: #fff5f3;
+}
+@media (min-width: 760px) {
+  .mission-strip { grid-template-columns: repeat(5, minmax(0, 1fr)); }
+}
