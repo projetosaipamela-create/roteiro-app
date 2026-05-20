@@ -1,1 +1,5 @@
 .vercel
+.vercel-local-data
+.npm-cache
+node_modules
+Microsoft

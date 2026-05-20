@@ -15,85 +15,23 @@
       <h2>Roteiro Dubai, Coreia e Japão</h2>
       <p>Digite a senha combinada para abrir o app do roteiro.</p>
       <form id="gateForm" class="gate-form">
-        <label>
-          <span>Senha</span>
-          <input id="gatePassword" type="password" autocomplete="current-password" placeholder="senha da família">
-        </label>
+        <label><span>Senha</span><input id="gatePassword" type="password" autocomplete="current-password" placeholder="senha da família"></label>
         <button type="submit">Abrir roteiro</button>
       </form>
       <p class="gate-error" id="gateError" role="alert"></p>
     </div>
   </section>
-
   <div class="app-shell">
-    <div class="ambient-motifs" aria-hidden="true">
-      <span class="motif motif-dubai">✦</span>
-      <span class="motif motif-korea">REC</span>
-      <span class="motif motif-japan">?</span>
-      <span class="motif motif-ring"></span>
-      <span class="motif motif-star">★</span>
-      <span class="motif motif-heart">♡</span>
-    </div>
+    <div class="ambient-motifs" aria-hidden="true"><span class="motif motif-dubai">✦</span><span class="motif motif-korea">REC</span><span class="motif motif-japan">?</span><span class="motif motif-ring"></span><span class="motif motif-star">★</span><span class="motif motif-heart">♡</span></div>
     <header class="topbar">
-      <div class="brand">
-        <div class="brand-mark" aria-hidden="true">✦</div>
-        <div>
-          <h1>Roteiro da Família</h1>
-          <p>Dubai, Coreia e Japão | julho de 2026 | 5 adultos + 2 crianças</p>
-        </div>
-      </div>
-      <div class="toolbar" aria-label="Controles do roteiro">
-        <label>
-          <span>Dia</span>
-          <select id="daySelect"></select>
-        </label>
-        <label>
-          <span>Buscar</span>
-          <input id="searchInput" type="search" placeholder="loja, café, Fuji, papelaria...">
-        </label>
-      </div>
+      <div class="brand"><div class="brand-mark" aria-hidden="true">✦</div><div><h1>Roteiro da Família</h1><p>Dubai, Coreia e Japão | julho de 2026 | 5 adultos + 2 crianças</p></div></div>
+      <div class="toolbar" aria-label="Controles do roteiro"><label><span>Dia</span><select id="daySelect"></select></label><label><span>Buscar</span><input id="searchInput" type="search" placeholder="loja, café, Fuji, papelaria..."></label></div>
       <div class="quick-filters" id="quickFilters" aria-label="Filtros rápidos"></div>
     </header>
-
-    <main class="main-layout">
-      <section class="stage" aria-live="polite">
-        <article class="day-card" id="dayCard">
-          <div class="hero" id="hero">
-            <div class="hero-pattern" aria-hidden="true"></div>
-            <div class="hero-copy">
-              <p class="eyebrow" id="heroEyebrow"></p>
-              <h2 id="heroTitle"></h2>
-              <p id="heroSubtitle"></p>
-              <div class="chip-row" id="heroChips"></div>
-            </div>
-            <div class="hero-illustration" id="heroIllustration" aria-hidden="true"></div>
-          </div>
-
-          <nav class="section-tabs" aria-label="Abas do dia">
-            <button class="section-tab active" data-section="roteiro">Roteiro</button>
-            <button class="section-tab" data-section="comida">Comida</button>
-            <button class="section-tab" data-section="hotel">Hotel</button>
-            <button class="section-tab" data-section="mapas">Mapas</button>
-          </nav>
-
-          <div class="section-panel active" id="section-roteiro"></div>
-          <div class="section-panel" id="section-comida"></div>
-          <div class="section-panel" id="section-hotel"></div>
-          <div class="section-panel" id="section-mapas"></div>
-        </article>
-      </section>
-    </main>
-
-    <nav class="bottom-nav" aria-label="Navegação inferior">
-      <button class="active" data-jump="roteiro">Roteiro</button>
-      <button data-jump="comida">Comida</button>
-      <button data-jump="hotel">Hotel</button>
-      <button data-jump="mapas">Mapas</button>
-    </nav>
-
+    <main class="main-layout"><section class="stage" aria-live="polite"><article class="day-card" id="dayCard"><div class="hero" id="hero"><div class="hero-pattern" aria-hidden="true"></div><div class="hero-copy"><p class="eyebrow" id="heroEyebrow"></p><h2 id="heroTitle"></h2><p id="heroSubtitle"></p><div class="chip-row" id="heroChips"></div></div><div class="hero-illustration" id="heroIllustration" aria-hidden="true"></div></div><nav class="section-tabs" aria-label="Abas do dia"><button class="section-tab active" data-section="roteiro">Roteiro</button><button class="section-tab" data-section="comida">Comida</button><button class="section-tab" data-section="hotel">Hotel</button><button class="section-tab" data-section="mapas">Mapas</button></nav><div class="section-panel active" id="section-roteiro"></div><div class="section-panel" id="section-comida"></div><div class="section-panel" id="section-hotel"></div><div class="section-panel" id="section-mapas"></div></article></section></main>
+    <nav class="bottom-nav" aria-label="Navegação inferior"><button class="active" data-jump="roteiro">Roteiro</button><button data-jump="comida">Comida</button><button data-jump="hotel">Hotel</button><button data-jump="mapas">Mapas</button></nav>
     <div class="toast" id="toast" role="status"></div>
   </div>
-
   <script type="module" src="./assets/app.js"></script>
 </body>
 </html>
